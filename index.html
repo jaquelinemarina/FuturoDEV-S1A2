@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Carros</title>
+
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            background-color: rgba(12, 105, 96, 0.915);
+            color: white;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sistema de Gerenciamento de Veículos</h1>
+    <script>
+
+        /*Objetivo: desenvolver um processo sequencial para cadastrar um carro em um sistema de gerenciamento de veículos.
+        As informações necessárias serão: placa, modelo, ano e cor.
+        Sem necessidade de salvar em um banco de dados.*/
+
+        const placa = prompt('Digite a placa do carro: ');
+        console.log(`A placa do carro informada é: ${placa}`)
+
+        const modelo = prompt('Digite o modelo do carro: ');
+        console.log(`O modelo do carro informado é: ${modelo}`)
+
+        const ano = prompt('Digite o ano do carro: ');
+        console.log(`O ano do carro informado é: ${ano}`)
+
+        const cor = prompt('Digite a cor do carro: ');
+        console.log(`A cor do carro informada é: ${cor}`)
+
+        const veiculo = { placa, modelo, ano, cor }
+        console.log(`O veículo registrado foi: ${JSON.stringify(veiculo)}`) //exibe no console os dados coletados como string */
+
+        document.write(`O veículo registrado foi: placa: ${placa} | modelo: ${modelo} | ano: ${ano} | cor: ${cor}`)
+
+    </script>
+</body>
+
+</html>
